@@ -13,6 +13,7 @@ public class Fade : MonoBehaviour
 
     IEnumerator RunFade()
     {
+        yield return new WaitForSeconds(2.0f);
         Color color = mat.color;
         while(color.a > 0.0f)
         {
